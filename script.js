@@ -83,7 +83,7 @@ function spin() {
 
 function showResult() {
     const sliceAngle = (2 * Math.PI) / words.length;
-    const index = words.length - Math.floor((currentAngle % (2 * Math.PI)) / sliceAngle) - 1;
+    const index = words.length - Math.floor((currentAngle % (2 * Math.PI)) / sliceAngle) - 2;
     const winningWord = words[index >= 0 ? index : 0];
     result.textContent = `🎉 Winner: ${winningWord}`;
 }
